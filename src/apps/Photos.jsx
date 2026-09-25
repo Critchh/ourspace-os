@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { createPortal } from "react-dom";
 import { FiX } from "react-icons/fi";
 
 function Photos() {
@@ -64,7 +65,7 @@ const photos = [
         ))}
       </div>
 
-      {selectedPhoto && (
+      {selectedPhoto && createPortal(
         <div
           className="photo-viewer"
           onClick={() => setSelectedPhoto(null)}
@@ -77,6 +78,7 @@ const photos = [
               className="photo-viewer-close"
               onClick={() => setSelectedPhoto(null)}
               aria-label="Close photo"
+              type="button"
             >
               <FiX />
             </button>
@@ -88,7 +90,8 @@ const photos = [
 
             <p>{selectedPhoto.caption}</p>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );

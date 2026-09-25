@@ -6,7 +6,6 @@ import {
   FiChevronLeft,
   FiChevronRight,
   FiFeather,
-  FiHeart,
   FiHome,
   FiImage,
   FiLock,
@@ -166,8 +165,8 @@ function Desktop() {
       app: "Messages",
     },
     {
-      label: "Memories",
-      icon: <FiHeart />,
+      label: "Future",
+      icon: <FiMap />,
       app: "Future",
     },
     {
