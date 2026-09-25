@@ -752,7 +752,7 @@ button {
 .photo-viewer-content p {
   margin: 0;
 
-  color: var(--ourlife-muted);
+  color: var(--ourspace-muted);
 
   font-family: Georgia, "Times New Roman", serif;
   font-size: 15px;
@@ -780,7 +780,7 @@ button {
 
   background: rgba(255, 250, 239, 0.88);
 
-  color: var(--ourlife-ink);
+  color: var(--ourspace-ink);
 
   font-size: 21px;
 
@@ -2959,19 +2959,19 @@ h3,
 }
 
 /* =========================================
-   OURLIFE MOCKUP SHELL
+   OURSPACE MOCKUP SHELL
    ========================================= */
 
 :root {
-  --ourlife-ink: #2f3528;
-  --ourlife-muted: #6f715f;
-  --ourlife-soft: rgba(249, 244, 232, 0.78);
-  --ourlife-panel: rgba(255, 250, 239, 0.74);
-  --ourlife-panel-strong: rgba(255, 250, 239, 0.9);
-  --ourlife-line: rgba(74, 82, 57, 0.14);
-  --ourlife-sage: #516f3d;
-  --ourlife-sage-soft: rgba(81, 111, 61, 0.16);
-  --ourlife-gold: #d9a640;
+  --ourspace-ink: #2f3528;
+  --ourspace-muted: #6f715f;
+  --ourspace-soft: rgba(249, 244, 232, 0.78);
+  --ourspace-panel: rgba(255, 250, 239, 0.74);
+  --ourspace-panel-strong: rgba(255, 250, 239, 0.9);
+  --ourspace-line: rgba(74, 82, 57, 0.14);
+  --ourspace-sage: #516f3d;
+  --ourspace-sage-soft: rgba(81, 111, 61, 0.16);
+  --ourspace-gold: #d9a640;
 }
 
 .desktop {
@@ -3017,7 +3017,7 @@ h3,
   display: none;
 }
 
-.ourlife-shell {
+.ourspace-shell {
   width: min(1660px, 100%);
   min-height: calc(100vh - clamp(36px, 4vw, 56px));
   display: grid;
@@ -3028,7 +3028,7 @@ h3,
   border-radius: 22px;
 }
 
-.ourlife-sidebar {
+.ourspace-sidebar {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3041,13 +3041,13 @@ h3,
       rgba(255, 250, 239, 0.7),
       rgba(255, 250, 239, 0.34)
     );
-  color: var(--ourlife-ink);
+  color: var(--ourspace-ink);
   backdrop-filter: blur(18px);
 }
 
 .sidebar-brand h1 {
   margin: 0 0 10px;
-  color: var(--ourlife-ink);
+  color: var(--ourspace-ink);
   font-size: clamp(34px, 4vw, 48px);
   font-weight: 500;
   line-height: 0.96;
@@ -3055,7 +3055,7 @@ h3,
 
 .sidebar-brand p {
   margin: 0;
-  color: var(--ourlife-muted);
+  color: var(--ourspace-muted);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 16px;
   font-style: italic;
@@ -3075,7 +3075,7 @@ h3,
   border: 0;
   border-radius: 999px;
   background: transparent;
-  color: var(--ourlife-ink);
+  color: var(--ourspace-ink);
   text-align: left;
   cursor: pointer;
 }
@@ -3100,10 +3100,10 @@ h3,
   width: 30px;
   height: 30px;
   border-radius: 999px;
-  background: var(--ourlife-sage);
+  background: var(--ourspace-sage);
 }
 
-.ourlife-workspace {
+.ourspace-workspace {
   align-self: center;
   min-height: min(560px, calc(100vh - 86px));
   display: flex;
@@ -3156,7 +3156,7 @@ h3,
   align-items: center;
   gap: 9px;
   padding: 0 14px;
-  border: 1px solid var(--ourlife-line);
+  border: 1px solid var(--ourspace-line);
   border-radius: 999px;
   background: rgba(255, 252, 244, 0.62);
   color: #8a8d79;
@@ -3167,7 +3167,7 @@ h3,
   border: 0;
   outline: 0;
   background: transparent;
-  color: var(--ourlife-ink);
+  color: var(--ourspace-ink);
   font: inherit;
   font-size: 13px;
 }
@@ -3203,10 +3203,10 @@ h3,
   flex-direction: column;
   overflow: hidden;
   padding: 20px;
-  border: 1px solid var(--ourlife-line);
+  border: 1px solid var(--ourspace-line);
   border-radius: 18px;
-  background: var(--ourlife-panel);
-  color: var(--ourlife-ink);
+  background: var(--ourspace-panel);
+  color: var(--ourspace-ink);
   text-align: left;
   box-shadow:
     0 18px 48px rgba(50, 54, 38, 0.1);
@@ -3216,7 +3216,7 @@ h3,
 
 .workspace-card h2 {
   margin: 0;
-  color: var(--ourlife-ink);
+  color: var(--ourspace-ink);
   font-size: clamp(22px, 2vw, 28px);
   font-weight: 500;
   line-height: 1.05;
@@ -3245,7 +3245,7 @@ h3,
 
 .entry-date {
   margin-bottom: 12px;
-  color: var(--ourlife-muted);
+  color: var(--ourspace-muted);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 13px;
 }
@@ -3261,22 +3261,22 @@ h3,
   aspect-ratio: 1;
   display: grid;
   place-items: center;
-  border: 1px solid var(--ourlife-line);
+  border: 1px solid var(--ourspace-line);
   border-radius: 999px;
   background: rgba(255, 252, 244, 0.62);
-  color: var(--ourlife-muted);
+  color: var(--ourspace-muted);
   font-family: Georgia, "Times New Roman", serif;
 }
 
 .entry-mood-scale .selected {
-  background: var(--ourlife-sage);
+  background: var(--ourspace-sage);
   color: #fffaf0;
 }
 
 .entry-scale-labels {
   display: flex;
   justify-content: space-between;
-  color: var(--ourlife-muted);
+  color: var(--ourspace-muted);
   font-size: 12px;
 }
 
@@ -3299,7 +3299,7 @@ h3,
 .entry-note-box p,
 .entry-note-box span {
   margin: 0;
-  color: var(--ourlife-muted);
+  color: var(--ourspace-muted);
   font-size: 13px;
 }
 
@@ -3316,7 +3316,7 @@ h3,
   gap: 10px;
   margin-top: 16px;
   border-radius: 14px;
-  background: var(--ourlife-sage);
+  background: var(--ourspace-sage);
   color: #fffaf0;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 16px;
@@ -3341,7 +3341,7 @@ h3,
 .calendar-month-row {
   justify-content: center;
   margin-bottom: 18px;
-  color: var(--ourlife-ink);
+  color: var(--ourspace-ink);
   font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -3352,7 +3352,7 @@ h3,
 }
 
 .mini-calendar .weekday {
-  color: var(--ourlife-muted);
+  color: var(--ourspace-muted);
   font-size: 11px;
   text-align: center;
 }
@@ -3364,7 +3364,7 @@ h3,
   place-items: center;
   border-radius: 10px;
   background: rgba(255, 252, 244, 0.55);
-  color: var(--ourlife-ink);
+  color: var(--ourspace-ink);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 14px;
   font-weight: 500;
@@ -3375,7 +3375,7 @@ h3,
 }
 
 .mini-calendar strong.selected {
-  outline: 1px solid var(--ourlife-sage);
+  outline: 1px solid var(--ourspace-sage);
 }
 
 .mini-calendar i {
@@ -3399,14 +3399,14 @@ h3,
 
 .workspace-summary p {
   margin: 0;
-  color: var(--ourlife-ink);
+  color: var(--ourspace-ink);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 13px;
   line-height: 1.6;
 }
 
 .recap-date {
-  color: var(--ourlife-muted);
+  color: var(--ourspace-muted);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 13px;
 }
@@ -3417,7 +3417,7 @@ h3,
 }
 
 .recap-copy span {
-  color: var(--ourlife-muted);
+  color: var(--ourspace-muted);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -3473,7 +3473,7 @@ h3,
 }
 
 @media (max-width: 1100px) {
-  .ourlife-shell {
+  .ourspace-shell {
     grid-template-columns: 220px minmax(0, 1fr);
   }
 
@@ -3507,7 +3507,7 @@ h3,
     padding: 32px 18px 120px;
   }
 
-  .ourlife-shell {
+  .ourspace-shell {
     display: none;
   }
 
@@ -3540,7 +3540,7 @@ h3,
 .sidebar-brand h1 { font-size: clamp(34px, 3.2vw, 42px); }
 
 
-.ourlife-sidebar { padding-inline: clamp(22px, 2.2vw, 32px); }
+.ourspace-sidebar { padding-inline: clamp(22px, 2.2vw, 32px); }
 .sidebar-brand h1 { white-space: nowrap; font-size: clamp(34px, 3vw, 40px); }
 
 
@@ -3555,7 +3555,7 @@ h3,
 
 .window {
   transform-origin: 50% 54%;
-  animation: ourlife-window-open 260ms cubic-bezier(0.2, 0.85, 0.24, 1) both;
+  animation: ourspace-window-open 260ms cubic-bezier(0.2, 0.85, 0.24, 1) both;
   will-change: transform, opacity, filter;
 }
 
@@ -3568,16 +3568,16 @@ h3,
   pointer-events: none;
   background: rgba(255, 250, 239, 0.12);
   opacity: 0;
-  animation: ourlife-window-sheen 420ms ease-out 80ms both;
+  animation: ourspace-window-sheen 420ms ease-out 80ms both;
 }
 
 .window-closing {
   pointer-events: none;
-  animation: ourlife-window-close 210ms cubic-bezier(0.4, 0, 0.8, 0.35) both;
+  animation: ourspace-window-close 210ms cubic-bezier(0.4, 0, 0.8, 0.35) both;
 }
 
 .window-content {
-  animation: ourlife-content-rise 300ms cubic-bezier(0.2, 0.85, 0.24, 1) 60ms both;
+  animation: ourspace-content-rise 300ms cubic-bezier(0.2, 0.85, 0.24, 1) 60ms both;
 }
 
 .window,
@@ -3696,26 +3696,26 @@ h3,
 }
 
 .dock {
-  animation: ourlife-dock-rise 360ms cubic-bezier(0.2, 0.85, 0.24, 1) both;
+  animation: ourspace-dock-rise 360ms cubic-bezier(0.2, 0.85, 0.24, 1) both;
 }
 
-.ourlife-workspace {
-  animation: ourlife-workspace-in 420ms cubic-bezier(0.2, 0.85, 0.24, 1) both;
+.ourspace-workspace {
+  animation: ourspace-workspace-in 420ms cubic-bezier(0.2, 0.85, 0.24, 1) both;
 }
 
 .workspace-card:nth-child(1) {
-  animation: ourlife-card-in 360ms cubic-bezier(0.2, 0.85, 0.24, 1) 60ms both;
+  animation: ourspace-card-in 360ms cubic-bezier(0.2, 0.85, 0.24, 1) 60ms both;
 }
 
 .workspace-card:nth-child(2) {
-  animation: ourlife-card-in 360ms cubic-bezier(0.2, 0.85, 0.24, 1) 120ms both;
+  animation: ourspace-card-in 360ms cubic-bezier(0.2, 0.85, 0.24, 1) 120ms both;
 }
 
 .workspace-card:nth-child(3) {
-  animation: ourlife-card-in 360ms cubic-bezier(0.2, 0.85, 0.24, 1) 180ms both;
+  animation: ourspace-card-in 360ms cubic-bezier(0.2, 0.85, 0.24, 1) 180ms both;
 }
 
-@keyframes ourlife-window-open {
+@keyframes ourspace-window-open {
   from {
     opacity: 0;
     filter: blur(8px);
@@ -3735,7 +3735,7 @@ h3,
   }
 }
 
-@keyframes ourlife-window-close {
+@keyframes ourspace-window-close {
   from {
     opacity: 1;
     filter: blur(0);
@@ -3749,7 +3749,7 @@ h3,
   }
 }
 
-@keyframes ourlife-content-rise {
+@keyframes ourspace-content-rise {
   from {
     opacity: 0;
     transform: translateY(10px);
@@ -3761,7 +3761,7 @@ h3,
   }
 }
 
-@keyframes ourlife-window-sheen {
+@keyframes ourspace-window-sheen {
   0% {
     opacity: 0;
   }
@@ -3775,7 +3775,7 @@ h3,
   }
 }
 
-@keyframes ourlife-dock-rise {
+@keyframes ourspace-dock-rise {
   from {
     opacity: 0;
     transform: translate(-50%, 18px) scale(0.96);
@@ -3787,7 +3787,7 @@ h3,
   }
 }
 
-@keyframes ourlife-workspace-in {
+@keyframes ourspace-workspace-in {
   from {
     opacity: 0;
     transform: translateY(14px) scale(0.985);
@@ -3799,7 +3799,7 @@ h3,
   }
 }
 
-@keyframes ourlife-card-in {
+@keyframes ourspace-card-in {
   from {
     opacity: 0;
     transform: translateY(14px) scale(0.985);

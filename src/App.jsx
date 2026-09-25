@@ -11,7 +11,7 @@ function App() {
         <div className="access-card">
           <p className="eyebrow">PRIVATE SYSTEM</p>
 
-          <h1>OurLife OS</h1>
+          <h1>OurSpace OS</h1>
 
           <p className="subtitle">
             A softer place for our everyday.

@@ -1,6 +1,6 @@
 # Production Checklist
 
-Use this before deploying OurLife OS.
+Use this before deploying OurSpace OS.
 
 ## Environment
 

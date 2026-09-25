@@ -186,7 +186,7 @@ function Desktop() {
       <header className="top-bar">
         <div className="os-name">
           <span className="heart">♥</span>
-          <span>OurLife OS</span>
+          <span>OurSpace OS</span>
         </div>
 
         <div className="system-status">
@@ -199,7 +199,7 @@ function Desktop() {
         <div className="mobile-home">
           <div className="welcome-message">
             <p>Welcome back.</p>
-            <h1>OurLife OS</h1>
+            <h1>OurSpace OS</h1>
             <span>A softer place for our everyday.</span>
           </div>
 
@@ -218,14 +218,14 @@ function Desktop() {
           </div>
         </div>
 
-        <div className="ourlife-shell">
-          <aside className="ourlife-sidebar">
+        <div className="ourspace-shell">
+          <aside className="ourspace-sidebar">
             <div className="sidebar-brand">
-              <h1>OurLife OS.</h1>
+              <h1>OurSpace OS.</h1>
               <p>A softer place for our everyday.</p>
             </div>
 
-            <nav className="sidebar-nav" aria-label="OurLife apps">
+            <nav className="sidebar-nav" aria-label="OurSpace apps">
               {navItems.map((item) => (
                 <button
                   className={
@@ -244,7 +244,7 @@ function Desktop() {
             </nav>
           </aside>
 
-          <section className="ourlife-workspace">
+          <section className="ourspace-workspace">
             <div className="workspace-grid">
               <button
                 className="workspace-card workspace-entry"
