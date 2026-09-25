@@ -1,8 +1,22 @@
+import { useState } from "react";
 import { FiX } from "react-icons/fi";
 
 function Window({ title, children, onClose }) {
+  const [isClosing, setIsClosing] = useState(false);
+
+
+  function closeWindow() {
+    if (isClosing) return;
+
+    setIsClosing(true);
+
+    window.setTimeout(() => {
+      onClose();
+    }, 210);
+  }
+
   return (
-    <div className="window">
+    <div className={isClosing ? "window window-closing" : "window"}>
       <div className="window-header">
         <span className="window-title">
           {title}
@@ -10,7 +24,7 @@ function Window({ title, children, onClose }) {
 
         <button
           className="window-close"
-          onClick={onClose}
+          onClick={closeWindow}
           aria-label="Close window"
         >
           <FiX />

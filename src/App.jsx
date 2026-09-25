@@ -11,10 +11,10 @@ function App() {
         <div className="access-card">
           <p className="eyebrow">PRIVATE SYSTEM</p>
 
-          <h1>OurSpace OS</h1>
+          <h1>OurLife OS</h1>
 
           <p className="subtitle">
-            A small world built just for us.
+            A softer place for our everyday.
           </p>
 
           <button onClick={() => setStarted(true)}>
@@ -25,11 +25,8 @@ function App() {
     );
   }
 
-  
-return <Desktop />;
-
+  return <Desktop />;
 }
 
 export default App;
-
 

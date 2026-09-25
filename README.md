@@ -1,16 +1,54 @@
-# React + Vite
+# OurSpace OS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A light pastel React/Vite desktop for shared anniversary apps, memories, and the
+Daily Tracker.
 
-Currently, two official plugins are available:
+## Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## Supabase Daily Tracker Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The Daily Tracker uses Supabase Auth and Postgres. The frontend only uses the
+public anon key, while Row Level Security limits reads, writes, and deletes to
+approved authenticated member emails.
 
-## Expanding the ESLint configuration
+1. Create a Supabase project.
+2. Open the Supabase SQL editor and run `docs/supabase-daily-tracker.sql`.
+3. Replace `hannah@example.com` and `ian@example.com` in the SQL with the real
+   emails Hannah and Ian will use to sign in.
+4. In Supabase Dashboard > Authentication > Providers, enable Email sign-in.
+5. In Authentication > URL Configuration, set the Site URL to the deployed
+   OurSpace URL.
+6. Add redirect URLs for local and production, for example:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+http://localhost:5173
+https://your-ourspace-domain.vercel.app
+```
+
+7. Copy `.env.example` to `.env.local` and fill in the values from Supabase
+   Dashboard > Project Settings > API:
+
+```bash
+VITE_SUPABASE_URL=https://your-project-ref.supabase.co
+VITE_SUPABASE_ANON_KEY=your-supabase-anon-public-key
+```
+
+8. Restart the Vite dev server after adding environment variables.
+
+## RLS Notes
+
+The SQL creates:
+
+- `app_members`, the allowlist for Hannah and Ian's authenticated emails.
+- `daily_entries`, with a unique `entry_date`, a `mood` check from 1 to 10,
+  `note`, `reply`, `created_at`, and `updated_at` fields.
+- Row Level Security policies that reject anonymous requests and only allow
+  authenticated users whose email exists in `app_members`.
+
+Do not put Supabase service-role keys or other secrets in Vite environment
+variables. Only use the anon public key on the frontend.
